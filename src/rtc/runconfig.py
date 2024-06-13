@@ -268,7 +268,8 @@ def runconfig_to_bursts(cfg: SimpleNamespace):
         pols = mode_to_pols[cfg.processing.polarization]
 
         # zip pol and IW subswath indices together
-        i_subswaths = [1, 2, 3]
+        # i_subswaths = [1, 2, 3]
+        i_subswaths = [3]
         pol_subswath_index_pairs = [(pol, i)
                                     for pol in pols for i in i_subswaths]
 
